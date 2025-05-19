@@ -5,8 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tech4All Responsive</title>
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html, body {
+      min-width: 640px;
+      overflow-x: auto;
+    }
+  </style>
 </head>
-<body class="lg:overflow-x-hidden">
+<body class=" min-w-[640px] xl:overflow-x-hidden lg:overflow-x-hidden md:overflow-x-hidden">
 
   <section class="relative w-full">
     <div class="w-full bg-white p-0 relative">
@@ -21,59 +28,54 @@
           />
         </div>
       
-        <nav class="hidden md:flex space-x-10 text-black justify-center w-1/3">
-          <a class="hover:underline">
+        <nav class="hidden md:flex space-x-10 text-white justify-center w-1/3">
+          <a class="hover:underline cursor-pointer hover:decoration-white">
             <p class="text-[24px] text-white font-semibold leading-[27.2px] tracking-[0]">Events</p>
           </a>
-          <a class="hover:underline">
+          <a class="hover:underline cursor-pointer hover:decoration-white">
             <p class="text-[24px] text-white font-semibold leading-[27.2px] tracking-[0]">About</p>
           </a>
-          <a class="hover:underline">
+          <a class="hover:underline cursor-pointer hover:decoration-white">
             <p class="text-[24px] text-white font-semibold leading-[27.2px] tracking-[0]">Contacts</p>
           </a>
         </nav>
       
-        <div class="w-1/3"></div> <!-- This is an empty block to balance the flex layout -->
+        <div class="w-1/3"></div> 
       </header>
-      
 
-      <!-- HERO SECTION -->
-      <!-- BACKGROUND CONTAINER -->
+      <section>
 <div class="absolute inset-0 w-full h-full overflow-hidden z-0">
-  <img src="assets/b62f180d00d9013f23b6fe82e156078cdd7269cc.jpg" 
-     class="absolute inset-0 min-w-full min-h-full object-cover scale-[1.2] translate-x-[23%] translate-y-[-16%]" 
-     alt="Background"
-     width="156.18px"
-    height="25.46px shrink-0"
-     />
-
+  <div class="absolute inset-0 bg-[url('assets/b62f180d00d9013f23b6fe82e156078cdd7269cc.jpg')] bg-center bg-no-repeat bg-cover scale-100 xl:scale-[1.2] xl:translate-x-[25%] xl:translate-y-[-16%] 2xl:translate-x-[23%] 2xl:translate-y-[-16%]">
+  </div>
+  
        
-  <div class="absolute inset-0 bg-blue-600 bg-opacity-30 pointer-events-none"></div>
+  <div class="absolute inset-0 bg-blue-600 bg-opacity-30 pointer-events-none z-80 xl:h-[1063px]"></div>
  
-  <div class="absolute inset-0 bg-gradient-to-r from-black via-green-900/40 to-transparent pointer-events-none"></div>
+  <div class="absolute inset-0 bg-gradient-to-r from-black via-green-900/40 to-transparent pointer-events-none xl:h-[1063px] z-80"></div>
 </div>
 
         
         <div class="relative z-30 px-12 pt-[180px] ml-[26px] ">
           <p class="text-yellow-400 text-sm font-semibold mb-4">A GLOBAL AFRICA BUSINESS INITIATIVE</p>
-          <h1 class="text-white text-8xl lg:text-8xl font-semibold tracking-[-1px] leading-loose">
+          <h1 class="text-white xl:text-8xl lg:text-8xl md:text-7xl sm:text-6xl font-semibold tracking-[-1px] leading-loose">
             <span>Building Inclusive Digital <br>
             Economies in Africa
 
             <div>
               <img
                 src="assets/Vector 444.png"
-                class="absolute top-[307px] left-[140px] w-[205.257px] h-[13.5px]"
+                class="absolute lg:top-[307px] lg:left-[140px] md:top-[290px] md:left-[70px] sm:top-[275px] sm:left-[40px] w-[205.257px] h-[13.5px]"
               />
             </div>
-          
+          <div>
             <img
             src="assets/Frame 1618874083.svg"
-            class="absolute bottom-[42.3rem] right-[60.5rem] w-8 h-8"
+            class="absolute xl:top-[340px] xl:left-[880px] lg:top-[430px] lg:left-[880px] md:top-[300px] md:left-[670px] sm:top-[347px] sm:left-[565px] w-8 h-8"
           />
+        </div>
           </span>
           </h1>
-          <p class="text-white text-xl mt-6 leading-loose">
+          <p class="text-white lg:text-2xl lg:leading-[44px] md:text-xl mt-6 ">
             Our mission is to build inclusive digital economies, empowering the <br>
             next generation of innovators, with a focus on women, youth, and <br>
             underserved communities.
@@ -83,7 +85,7 @@
           </div>
 
           <!-- TIMER -->
-          <div class="mt-[120px] mb-[70px] w-full max-w-md bg-white border-2 border-cyan-400 rounded-2xl p-4 shadow-lg ml-[1360px] items-end">
+          <div class="mt-[120px] mb-[70px] w-full max-w-md bg-white border-2 border-cyan-400 rounded-2xl lg:p-4 md:p-2 shadow-lg 2xl:ml-[1300px] xl:ml-[800px] lg:ml-[600px] md:[360px] items-end">
             <div class="grid grid-cols-3 text-center text-blue-400">
               <div>
                 <p class="text-3xl">16</p>
@@ -102,35 +104,38 @@
           <div class="h-[30px] w-full"></div>
         </div>
       </div>
-
-      <div id="next-page" class="bg-white w-screen h-full min-w-full min-h-full">
-        <div class=" items-center flex flex-row lg:flex-row   w-[563.2px] h-fit pt-[105px] pl-[146px] gap-[325px]">
+    </section>
+      <div id="next-page" class="bg-white w-screen h-full min-w-full min-h-full z-90">
+        <div>
+        <div class=" items-start flex flex-row w-[563.2px] h-fit pt-[105px] xl:pl-[146px] lg:pl-[200px] md:pl-[150px] sm:pl-[35px] 2xl:gap-[325px] 2xl:flex-row xl:gap-[20px] xl:flex-row  lg:flex-col lg:gap-[100px] md:flex-col md:gap-[100px] sm:flex-col sm:gap-[50px]">
             <div>
-            <div class="w-[663.2px] h-fit">
-                <p class="text-[20px] text-left text-[#ff2c4b] font-semibold leading-[30px] tracking-[0] ">ABOUT TECH4ALL</p>
+            <div class="w-[663.2px] h-fit pt-9">
+                <p class="md:text-[20px] sm:text-[15px] xl:text-left lg:text-center md:text-center sm:text-center text-[#ff2c4b] font-semibold leading-[30px] tracking-[0] ">ABOUT TECH4ALL</p>
 
-                <p class="text-[64px] text-[#11112d] font-semibold leading-[96.8px] tracking-[-1px] ">
-                    <span>Shaping the future </span>
-                    <span>with technology</span>
+                <p class="md:text-[70px] sm:text-[60px]  xl:text-left lg:text-center md:text-center sm:text-center text-[#11112d] font-semibold leading-[96.8px] tracking-[-1px] ">
+                    <span>Shaping the future </span><br>
+                    <span>with technology</span><br>
                 </p>
             </div>
-            <div class="">
+            <div class=" pt-[24px]">
                 <div>
-                <p class="text-[24px] text-left text-[#5f5e6d] font-light leading-[50.8px] tracking-[0px]">
-                    <span>At Tech4All, we are committed to bridging the </span>
-                <span>digital divide across Africa and beyond. Our </span>
-                <span>mission is to build inclusive digital economies, </span>
-                <span>empowering the next generation of innovators,</span> 
-                <span>with a focus on women, youth, and underserved</span> 
+                <p class="md:text-[30px] sm:text-[20px]  xl:text-left lg:text-center md:text-center sm:text-center text-[#5f5e6d] font-light leading-[50.8px] tracking-[0px]">
+                    <span>At Tech4All, we are committed to bridging the </span><br>
+                <span>digital divide across Africa and beyond. Our </span><br>
+                <span>mission is to build inclusive digital economies, </span><br>
+                <span>empowering the next generation of innovators,</span> <br>
+                <span>with a focus on women, youth, and underserved</span> <br>
                 <span>communities. </span>
                 </p>
+
+                
             </div>
             </div>
         </div id="squares">
-            <div class="flex flex-col  gap-10 h-fit">
+            <div class="flex flex-col flex-shrink  gap-10 h-fit">
                 <div class="h-800px"></div>
                 <div class="flex flex-row gap-12">
-                    <div class="border-[2px] border-[#ffae10] bg-[#fff3c9] w-[321px] h-[184px] rounded-bl-[50px] rounded-tr-[50px]">
+                    <div class="border-[2px] border-[#ffae10] bg-[#fff3c9] w-[371px] h-[234px] rounded-bl-[50px] rounded-tr-[50px]">
                         <div class="pt-4 pl-11">
                         <p class="text-[48px] text-left text-[#11112d] font-semibold leading-[72px] tracking-[-1px]">1 million+</p>
                         <p class="text-[18px] text-left text-[#101010] font-light leading-[27px] tracking-[0px]">
@@ -143,9 +148,9 @@
                         <img src="assets\dots2.png"/>
                     </div>
                 </div>
-                <div class="flex flex-row gap-7">
+                <div class="flex flex-row gap-12">
                     <div class="flex flex-col gap-5">
-                    <div class="bg-[#00d1ff] border-[2px] border-[#00BDE5] w-[195px] h-[175px]  rounded-br-[50px] rounded-tl-[50px]">
+                    <div class="bg-[#00d1ff] border-[2px] border-[#00BDE5] w-[245px] h-[215px]  rounded-br-[50px] rounded-tl-[50px]">
                         <div class="pt-4 pl-9">
                             <p class="text-[28px] text-left text-[#11112d] font-semibold leading-[39.2px] tracking-[0px]">Inclusivity</p>
                             <p class="text-[18px] text-left text-[#101010] font-light leading-[27px] tracking-[0px]">
@@ -159,7 +164,7 @@
                             <img src="assets\dots.png"/>
                         </div>
                 </div>
-                    <div class="border-[2px] border-[#9650ef] bg-[#a25bfb] w-[296px] h-[289px]  rounded-bl-[50px] rounded-tr-[50px]">
+                    <div class="border-[2px] border-[#9650ef] bg-[#a25bfb] w-[346px] h-[339px]  rounded-bl-[50px] rounded-tr-[50px]">
                         <div class="pt-7 pl-11">
                             <p class="text-[48px] text-left text-[#11112d] font-semibold leading-[56px] tracking-[-1px]">50+<br> Events<br></p>
                             <p class="text-[18px] text-left text-[#101010] font-light leading-[27px] tracking-[0px]">
@@ -174,21 +179,22 @@
             </div>
         </div>
     </div>
+  </div>
     <div>
-        <div class="pl-[45.5%] top-[518px] mt-[-35px]" id="curl">
-            <img src="assets\curl.png" class="scale-[1.5]">
+        <div class="pl-[45.5%] xl:top-[518px] lg:hidden md:hidden sm:hidden mt-[-35px]" id="curl">
+            <img src="assets\curl.png" class="xl:scale-[1.5] lg:scale-[1]">
         </div>
     </div>
 
-    <div class="relative w-[1700px] h-[654px] left-[100px] top-[88px] mb-[50px] rounded-[24px] bg-[#3E63DD]">
-      <div class="pt-[82.5px] pl-[265px] ml-[400px]">
+    <div class="relative 2xl:w-[1700px] xl:w-[1300px] lg:w-[1000px] md:w-[800px] sm:w-[500px] h-[654px] left-[100px] top-[88px] mb-[50px] rounded-[24px] bg-[#3E63DD]">
+      <div class="pt-[82.5px] 2xl:pl-[235px] xl:pl-[0px] xl:ml-[200px] md:ml-[75px] sm:ml-[75px]  ml-[400px]">
         <p class=" text-[46.31px] text-left text-[#ffffff] font-semibold leading-[57.6px] tracking-[-1px]">
           Upcoming Event
         </p>
         
       </div>
-      <div class="w-[1100px] h-[1px]  bg-[#a3b2ed] mt-[75.5px] ml-[280px]"></div>
-      <div class=" flex flex-row pl-[440px] gap-12">
+      <div class=" xl:w-[1100px] lg:w-[800px] h-[1px]  bg-[#a3b2ed] mt-[75.5px] 2xl:ml-[320px] xl:ml-[100px] lg:ml-[90px]"></div>
+      <div class=" flex flex-row 2xl:pl-[440px] xl:pl-[200px] lg:pl-[75px] 2xl:gap-12 xl:gap-10 md:gap-8 sm:pl-[50px]">
         <div class="mt-[62.41px] w-446px">
           <p class="text-[96px] text-left text-[#ffffff] font-semibold leading-[100%] tracking-[-1px]">
             Tech4All
@@ -204,10 +210,10 @@
           </div>
         </div>
 
-        <div class="relative w-[398px] h-[220px] rounded-[16px] overflow-hidden mt-[40px] ml-[72px]"> <!-- 30% of original height -->
+        <div class="relative w-[398px] h-[220px] rounded-[16px] overflow-hidden mt-[40px] ml-[72px]  "> <!-- 30% of original height -->
           <img
             src="assets\headset.jpg"
-            class="w-full object-cover transform -translate-y-[20%]"
+            class="w-full object-cover transform -translate-y-[20%] hidden md:flex"
             alt="Headset"
           />
         </div>
@@ -217,29 +223,29 @@
 
     <div class="h-[150px] w-screen bg-transparent items-center "></div>
 
-    <section class="relative mt-20 h-[654px] flex flex-col">
+    <section class="relative mt-20 h-[654px] j flex-col">
       <!-- <div></div>+ -->
       <!-- class="bg-[url('./assets/images/section-three-bg.svg')] h-full bg-no-repeat bg-position-[center_top_1rem]" -->
       <div class="w-full relative -top-24 right-12">
-        <img class="w-full" src="./assets/images/section-three-bg.svg" />
+        <img class="w-full" src="assets/images/section-three-bg.svg" />
       </div>
       <div
         class="px-8 absolute top-3 mx-auto w-[77.7%] max-w-[78%] left-0 right-0"
       >
-        <div class="bg-gray-100 h-[298px] flex flex-row">
-          <div class="flex flex-row gap-3 pt-[86px] mt-5 ml-[246px] pl-6">
+        <div class="bg-gray-100 h-[298px] 2xl:h-[298px] xl:h-[298px] lg:h-[298px] md:h-[200px] sm:h-[150px] flex flex-row">
+          <div class="flex flex-row gap-3 pt-[86px] mt-5 2xl:ml-[246px] xl:ml-[60px] lg:ml-[30px] pl-6 lg:pl-0  md:pl-[70px] sm:pl-3">
             <div>
-              <img src="assets\white-kids.png" class="w-[428px] h-[320px]">
-              <p class="text-[32px] text-left text-[#1a1a42] font-bold leading-[44.4px] tracking-[-0.64px]"> Our Mission</p>
-              <p class="text-[16px] text-left text-[#33335b] font-semibold leading-[33px] tracking-[-0.32px]">To empower underserved communities with access to <br>
+              <img src="assets\white-kids.png" class="xl:w-[428px] xl:h-[320px] lg:w-[338px] lg:h-[230px]  md:w-[238px] md:h-[130px] sm:w-[208px] sm:h-[100px]">
+              <p class="lg:text-[32px] md:text-[24px] sm:text-[20px] lg:text text-left text-[#1a1a42] font-bold leading-[44.4px] tracking-[-0.64px]"> Our Mission</p>
+              <p class="lg:text-[16px] md:text-[12px] sm:text-[10px] text-left text-[#33335b] font-semibold md:leading-[33px] sm:leading-[24px] tracking-[-0.32px]">To empower underserved communities with access to <br>
                 technology, fostering innovation and inclusive growth <br>
                 through global partnerships and impactful solutions. <br></p>
             </div>
             <div class="w-5"></div>
             <div>
-              <img src="assets\black-kids.jpg" class="w-[428px] h-[320px]">
-              <p class="text-[32px] text-left text-[#1a1a42] font-bold leading-[44.4px] tracking-[-0.64px]"> Our Vision</p>
-              <p class="text-[16px] text-left text-[#33335b] font-semibold leading-[33px] tracking-[-0.32px]">
+              <img src="assets\black-kids.jpg" class="xl:w-[428px] xl:h-[320px] lg:w-[338px] lg:h-[230px]  md:w-[238px] md:h-[130px] sm:w-[208px] sm:h-[100px]">
+              <p class="lg:text-[32px] md:text-[24px] sm:text-[20px] text-left text-[#1a1a42] font-bold leading-[44.4px]  tracking-[-0.64px]"> Our Vision</p>
+              <p class="lg:text-[16px] md:text-[12px] sm:text-[10px] text-left text-[#33335b] font-semibold md:leading-[33px] sm:leading-[24px] tracking-[-0.32px]">
                 A world where technology is accessible to all, driving <br>
                 social impact and empowering individuals to thrive <br>
                 globally. <br></p>
@@ -247,20 +253,20 @@
           </div>
         </div>
       </div> <div class="absolute bottom-[-100px] right-[100px]">
-    <svg xmlns="http://www.w3.org/2000/svg" width="298" height="144" viewBox="0 0 298 144" fill="none">
+    <svg class="hidden md:flex" xmlns="http://www.w3.org/2000/svg" width="298" height="144" viewBox="0 0 298 144" fill="none">
       <path d="M0 103H362M0 63H362M0 23H362M0 -17H362M0 -57H362M0 -97H362M0 -137H362M0 -177H362M41 -218L41 144M81 -218L81 144M121 -218L121 144M161 -218L161 144M201 -218L201 144M241 -218L241 144M281 -218L281 144M321 -218L321 144" stroke="#151718" stroke-linecap="round"/>
     </svg>
   </div>
   </section>
 
-  <div class="h-12 w-full bg-transparent" id="space"></div>
- 
+  <div class="md:h-12 sm:h-0 w-full bg-transparent" id="space"></div>
+ <div class="bg-[#0f0f0f] h-fit relative"></div>>
   <section class="bg-[#0f0f0f] h-[425px] relative">
     <div
-      class="border-[4px] border-[#3e63dd] border-solid absolute top-[0px] left-[226px] w-[952px] h-[294px] rounded-b-[22px] mx-[247px] mb-[273px] px-[128px] py-[64px] z-30"
+      class="border-[4px] border-[#3e63dd] 2xl:left-[226px] xl:left-[36px] lg:left-[0px] md:left-0px border-solid absolute top-[0px] lg:w-[952px] sm:w-screen h-[294px] md:w-[902px]  rounded-b-[22px] xl:mx-[247px] lg:mx-[150px] md:mx-[50px] mb-[273px] px-[128px] py-[64px] z-30"
     ></div>
     <div
-      class="absolute top-[0px] left-[229px] w-[946px] h-[291px] bg-[#3e63dd] text-white outline border-[3px] border-[#0f0f0f] gap-[10px] rounded-b-[22px] mx-[247px] mb-[273px] px-[128px] py-[64px] z-10>"
+      class="absolute top-[0px] 2xl:left-[229px] xl:left-[39px] lg:left-[3px] md:left-[3px] lg:w-[946px] h-[291px] md:w-[896px] sm:w-screen bg-[#3e63dd] text-white outline border-[3px] border-[#0f0f0f] gap-[10px] rounded-b-[22px] xl:mx-[247px] lg:mx-[150px] md:mx-[50px] mb-[273px] px-[128px] py-[64px] z-10>"
     >
       <h2 class="text-2xl md:text-3xl font-semibold text-center mb-3">
         Stay updated on all we do!
@@ -286,10 +292,10 @@
     </div>
   </section>
   <footer
-    class="bg-[#0f0f0f] text-white font-sans h-[964px] mb-[0px] pb-[0px]"
+    class="bg-[#0f0f0f] text-white font-sans h-[564px] mb-[0px] pb-[0px]"
   >
     <div
-      class="grid grid-cols-1 md:grid-cols-5 gap-10 text-sm w-[1860px] ml-[247px] mr-[248px] px-[230px] mb-[300px] relative"
+      class="grid xl:grid-cols-5 lg:grid-cols-6 md:grid-cols-7 2xl:gap-10 xl:gap-0 lg:gap-0 text-sm w-[1860px] 2xl:ml-[247px] xl:ml-[80px] lg:ml-[0px]  mr-[248px] xl:px-[230px] lg:px-[150px] md:px-[100px] mb-[200px] relative"
     >
       <div class="md:col-span-1 space-y-6">
         <img src="assets/images/Frame 28.svg" />
@@ -363,12 +369,15 @@
       </div>
     </div>
     <div
-      class="mt-12 text-center text-xs text-gray-600 border-t border-gray-800 pt-[43px] h-[99.51px]"
+      class=" bg-[#0f0f0f] mt-4 text-center text-xs text-gray-600 border-t border-gray-800 pt-[43px] h-fit"
     >
       © 2024 Tech4All. All rights reserved.
     </div>
   </footer>
+  </div>
       </div>
   </section>
+
+  
 </body>
 </html>
